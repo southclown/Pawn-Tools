@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Version](https://img.shields.io/badge/version-1.1.4-blue.svg?cacheSeconds=2592000)
+![Version](https://img.shields.io/badge/version-1.1.5-blue.svg?cacheSeconds=2592000)
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 ![Downloads](https://img.shields.io/visual-studio-marketplace/d/southclownlienhart.pawn-tools-omp-samp)
 ![Rating](https://img.shields.io/visual-studio-marketplace/r/southclownlienhart.pawn-tools-omp-samp)
@@ -162,7 +162,7 @@
 
 ## 🔄 Recent Updates
 
-### Version 1.1.4
+### Version 1.1.5
 - Added comprehensive color management system
 - Introduced color conversion tools
 - Added 100+ predefined colors
