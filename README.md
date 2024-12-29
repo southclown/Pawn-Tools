@@ -2,10 +2,14 @@
 
 <div align="center">
 
-![Version](https://img.shields.io/badge/version-1.1.3-blue.svg?cacheSeconds=2592000)
+![Version](https://img.shields.io/badge/version-1.1.4-blue.svg?cacheSeconds=2592000)
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 ![Downloads](https://img.shields.io/visual-studio-marketplace/d/southclownlienhart.pawn-tools-omp-samp)
 ![Rating](https://img.shields.io/visual-studio-marketplace/r/southclownlienhart.pawn-tools-omp-samp)
+![CI/CD](https://github.com/southclown/Pawn-Tools/workflows/CI%2FCD/badge.svg)
+![GitHub issues](https://img.shields.io/github/issues/southclown/Pawn-Tools)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/southclown/Pawn-Tools)
+![GitHub last commit](https://img.shields.io/github/last-commit/southclown/Pawn-Tools)
 
 <img src="https://raw.githubusercontent.com/southclown/Pawn-Tools/main/images/logo.png" alt="Pawn Tools Logo" width="150"/>
 
@@ -158,7 +162,7 @@
 
 ## 🔄 Recent Updates
 
-### Version 1.1.3
+### Version 1.1.4
 - Added comprehensive color management system
 - Introduced color conversion tools
 - Added 100+ predefined colors

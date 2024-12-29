@@ -2,6 +2,23 @@
 
 All notable changes to the "Pawn Tools for Open.MP and SA-MP" extension will be documented in this file.
 
+## [1.1.4] - 2024-12-29
+### Added
+- Enhanced color management system
+- Improved color conversion tools
+- Better documentation and examples
+- Performance optimizations
+
+### Changed
+- Updated dependencies
+- Improved error handling
+- Better user interface feedback
+
+### Fixed
+- Various minor bug fixes
+- Performance improvements
+- Documentation updates
+
 ## [1.1.3] - 2024-12-29
 ### Added
 - Comprehensive color management system

@@ -2,7 +2,7 @@
   "name": "pawn-tools-omp-samp",
   "displayName": "Pawn Tools for Open.MP and SA-MP",
   "description": "A comprehensive toolset for SA-MP and Open.MP Pawn development, featuring IntelliSense, snippets, and build tools",
-  "version": "1.1.3",
+  "version": "1.1.4",
   "publisher": "southclownlienhart",
   "author": {
     "name": "Southclown",
