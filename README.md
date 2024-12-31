@@ -1,8 +1,9 @@
 # 🎮 Pawn Tools for Open.MP and SA-MP
+![Pawn Tools Logo](https://raw.githubusercontent.com/southclown/Pawn-Tools/main/images/social-preview.png)
 
 <div align="center">
 
-![Version](https://img.shields.io/badge/version-1.1.5-blue.svg?cacheSeconds=2592000)
+![Version](https://img.shields.io/badge/version-1.1.8-blue.svg?cacheSeconds=2592000)
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 ![Downloads](https://img.shields.io/visual-studio-marketplace/d/southclownlienhart.pawn-tools-omp-samp)
 ![Rating](https://img.shields.io/visual-studio-marketplace/r/southclownlienhart.pawn-tools-omp-samp)
@@ -71,7 +72,7 @@
 
 1. **Create a New Project**
    ```bash
-   Ctrl+Shift+P → "Pawn Tools: Create Pawn File"
+   Ctrl+Shift+P → "Pawn: Create Pawn File"
    ```
 
 2. **Use Color Tools**
@@ -84,7 +85,7 @@
 
 3. **Build Your Script**
    ```bash
-   Ctrl+Shift+P → "Pawn Tools: Build File"
+   Ctrl+Shift+P → "Pawn: Build File"
    ```
 
 ## 🎨 Color Features
@@ -162,7 +163,8 @@
 
 ## 🔄 Recent Updates
 
-### Version 1.1.5
+### Version 1.1.8
+- Updated color management system
 - Added comprehensive color management system
 - Introduced color conversion tools
 - Added 100+ predefined colors
@@ -221,7 +223,7 @@ This project is [MIT](LICENSE) licensed.
 
 ⭐️ Star us on [GitHub](https://github.com/southclown/Pawn-Tools) if you find this project helpful!
 
-Made with ❤️ for the SA-MP and Open.MP community
+
 
 [Report Bug](https://github.com/southclown/Pawn-Tools/issues/new) · [Request Feature](https://github.com/southclown/Pawn-Tools/issues/new)
 
