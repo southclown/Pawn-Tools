@@ -1,9 +1,9 @@
 # 🎮 Pawn Tools for Open.MP and SA-MP
-![Pawn Tools Logo](https://raw.githubusercontent.com/southclown/Pawn-Tools/main/images/social-preview.png)
+
 
 <div align="center">
 
-![Version](https://img.shields.io/badge/version-1.1.8-blue.svg?cacheSeconds=2592000)
+![Version](https://img.shields.io/badge/version-2.0.0-blue.svg?cacheSeconds=2592000)
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 ![Downloads](https://img.shields.io/visual-studio-marketplace/d/southclownlienhart.pawn-tools-omp-samp)
 ![Rating](https://img.shields.io/visual-studio-marketplace/r/southclownlienhart.pawn-tools-omp-samp)
@@ -12,7 +12,7 @@
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/southclown/Pawn-Tools)
 ![GitHub last commit](https://img.shields.io/github/last-commit/southclown/Pawn-Tools)
 
-<img src="https://raw.githubusercontent.com/southclown/Pawn-Tools/main/images/logo.png" alt="Pawn Tools Logo" width="150"/>
+
 
 </div>
 
@@ -163,7 +163,7 @@
 
 ## 🔄 Recent Updates
 
-### Version 1.1.8
+### Version 2.0.0
 - Updated color management system
 - Added comprehensive color management system
 - Introduced color conversion tools
