@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background: #2d2d2d;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        canvas {
+            background: white;
+            border-radius: 4px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+<body>
+    <canvas id="iconCanvas" width="128" height="128"></canvas>
+    <script>
+        const canvas = document.getElementById('iconCanvas');
+        const ctx = canvas.getContext('2d');
+
+        // Modern gradient background
+        const gradient = ctx.createLinearGradient(0, 0, 128, 0);
+        gradient.addColorStop(0, '#9B4DCA');
+        gradient.addColorStop(1, '#6772e5');
+        ctx.fillStyle = gradient;
+        ctx.fillRect(0, 0, 128, 128);
+
+        // Add modern diagonal lines
+        ctx.strokeStyle = 'rgba(255,255,255,0.1)';
+        ctx.lineWidth = 1;
+        for(let i = -128; i < 128; i += 20) {
+            ctx.beginPath();
+            ctx.moveTo(i, 0);
+            ctx.lineTo(i + 128, 128);
+            ctx.stroke();
+        }
+
+        // Draw bold pawn
+        ctx.save();
+        ctx.translate(64, 64);
+        ctx.scale(1.1, 1.1); // Make it bigger
+
+        // Strong shadow for depth
+        ctx.shadowColor = 'rgba(0,0,0,0.4)';
+        ctx.shadowBlur = 15;
+        ctx.shadowOffsetY = 5;
+
+        // Pawn in white with slight gradient
+        const pawnGradient = ctx.createLinearGradient(-25, -40, 25, 40);
+        pawnGradient.addColorStop(0, '#ffffff');
+        pawnGradient.addColorStop(1, '#f0f0f0');
+        ctx.fillStyle = pawnGradient;
+
+        // Bold head
+        ctx.beginPath();
+        ctx.arc(0, -18, 16, 0, Math.PI * 2);
+        ctx.fill();
+
+        // Strong neck
+        ctx.beginPath();
+        ctx.moveTo(-10, -5);
+        ctx.quadraticCurveTo(-12, 0, -14, 10);
+        ctx.lineTo(-16, 20);
+        ctx.lineTo(16, 20);
+        ctx.lineTo(14, 10);
+        ctx.quadraticCurveTo(12, 0, 10, -5);
+        ctx.closePath();
+        ctx.fill();
+
+        // Solid base
+        ctx.beginPath();
+        ctx.moveTo(-22, 20);
+        ctx.lineTo(22, 20);
+        ctx.lineTo(18, 32);
+        ctx.lineTo(-18, 32);
+        ctx.closePath();
+        ctx.fill();
+
+        ctx.restore();
+
+        // Add modern accents
+        ctx.strokeStyle = 'rgba(255,255,255,0.2)';
+        ctx.lineWidth = 2;
+
+        // Circular accent
+        ctx.beginPath();
+        ctx.arc(64, 64, 50, 0, Math.PI * 2);
+        ctx.stroke();
+
+        // Add dramatic glow
+        const glowGradient = ctx.createRadialGradient(64, 64, 20, 64, 64, 80);
+        glowGradient.addColorStop(0, 'rgba(255,255,255,0.1)');
+        glowGradient.addColorStop(0.5, 'rgba(255,255,255,0.05)');
+        glowGradient.addColorStop(1, 'rgba(255,255,255,0)');
+        ctx.fillStyle = glowGradient;
+        ctx.beginPath();
+        ctx.arc(64, 64, 80, 0, Math.PI * 2);
+        ctx.fill();
+
+        // Add shine effect
+        ctx.fillStyle = 'rgba(255,255,255,0.1)';
+        ctx.beginPath();
+        ctx.moveTo(20, 20);
+        ctx.lineTo(40, 20);
+        ctx.lineTo(20, 40);
+        ctx.closePath();
+        ctx.fill();
+    </script>
+</body>
+</html>

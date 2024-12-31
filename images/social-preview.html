@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background: #1a1a1a;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+        }
+        #previewCanvas {
+            background: #2d2d2d;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+            margin-bottom: 20px;
+        }
+        .download-btn {
+            background: #9B4DCA;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 10px rgba(155, 77, 202, 0.3);
+        }
+        .download-btn:hover {
+            background: #8A45B5;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(155, 77, 202, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <canvas id="previewCanvas" width="1280" height="640"></canvas>
+    <button class="download-btn" onclick="downloadImage()">Download Preview Image</button>
+
+    <script>
+        const canvas = document.getElementById('previewCanvas');
+        const ctx = canvas.getContext('2d');
+
+        // Background with modern gradient
+        const gradient = ctx.createLinearGradient(0, 0, 1280, 640);
+        gradient.addColorStop(0, '#1a1a1a');
+        gradient.addColorStop(1, '#2d2d2d');
+        ctx.fillStyle = gradient;
+        ctx.fillRect(0, 0, 1280, 640);
+
+        // Add subtle pattern
+        ctx.strokeStyle = 'rgba(155, 77, 202, 0.1)';
+        ctx.lineWidth = 1;
+        for(let i = -640; i < 1280; i += 40) {
+            ctx.beginPath();
+            ctx.moveTo(i, 0);
+            ctx.lineTo(i + 640, 640);
+            ctx.stroke();
+        }
+
+        // Draw large pawn icon
+        ctx.save();
+        ctx.translate(300, 320);
+        ctx.scale(2.5, 2.5);
+
+        // Pawn with gradient
+        const pawnGradient = ctx.createLinearGradient(-25, -40, 25, 40);
+        pawnGradient.addColorStop(0, '#9B4DCA');
+        pawnGradient.addColorStop(1, '#6772e5');
+        ctx.fillStyle = pawnGradient;
+
+        // Draw pawn
+        ctx.beginPath();
+        ctx.arc(0, -18, 16, 0, Math.PI * 2);
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.moveTo(-10, -5);
+        ctx.quadraticCurveTo(-12, 0, -14, 10);
+        ctx.lineTo(-16, 20);
+        ctx.lineTo(16, 20);
+        ctx.lineTo(14, 10);
+        ctx.quadraticCurveTo(12, 0, 10, -5);
+        ctx.closePath();
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.moveTo(-22, 20);
+        ctx.lineTo(22, 20);
+        ctx.lineTo(18, 32);
+        ctx.lineTo(-18, 32);
+        ctx.closePath();
+        ctx.fill();
+
+        ctx.restore();
+
+        // Add text
+        ctx.textAlign = 'left';
+        ctx.fillStyle = 'white';
+        
+        // Title
+        ctx.font = 'bold 72px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto';
+        ctx.fillText('Pawn Tools VSCode', 500, 280);
+        
+        // Subtitle
+        ctx.font = '32px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto';
+        ctx.fillStyle = '#9B4DCA';
+        ctx.fillText('Development Tools for SA-MP and open.mp', 500, 340);
+
+        // Features
+        ctx.font = '24px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto';
+        ctx.fillStyle = '#888';
+        const features = ['IntelliSense', 'Code Snippets', 'Build Tools', 'Color Picker'];
+        features.forEach((feature, i) => {
+            ctx.fillText('• ' + feature, 500, 400 + i * 35);
+        });
+
+        // Add modern accents
+        ctx.strokeStyle = 'rgba(155, 77, 202, 0.2)';
+        ctx.lineWidth = 2;
+        ctx.beginPath();
+        ctx.arc(300, 320, 100, 0, Math.PI * 2);
+        ctx.stroke();
+
+        // Download function
+        function downloadImage() {
+            const link = document.createElement('a');
+            link.download = 'social-preview.png';
+            link.href = canvas.toDataURL('image/png');
+            link.click();
+        }
+    </script>
+</body>
+</html>
